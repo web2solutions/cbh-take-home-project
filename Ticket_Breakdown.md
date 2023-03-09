@@ -32,6 +32,8 @@ For this product, I'm assuming that we are the following technologies and princi
 - `Language`: TypeScript
 - `Database`: Agnostic, In Memory, Key/Value, NoSQL
 
+![UML classes](/domains.png "UML classes")
+
 ### Implemented application
 
 Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the application code for further reference.
