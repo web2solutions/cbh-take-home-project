@@ -16,6 +16,30 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
+Before going to the main task of this challenge, I did create a pseudo version for a hypothetical `Human Resource` application.
+
+Before to design this application, I made the following assumptions in terms of non-functional requirements:
+
+### Assumptions
+
+For this product, I'm assuming that we are the following technologies and principles:
+
+- `Design approach`
+  - Domain Driven Design
+  - The Clean Architecture
+  - Hexagonal Architecture
+  - SOLID.
+- `Language`: TypeScript
+
+### Implemented application
+
+Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the application code for further reference.
+
+`https://github.com/web2solutions/cbh-take-home-staffing`
+
+
+### Ticket Breakdown
+
 1. Update Domain component
   1.1. Update Agent Model - add customId
   1.2. 
@@ -23,50 +47,49 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 3. Update UI
 
 
-Before 
-
-### Assumptions
-
-For this product, I'm assuming that we are the following technologies and principles:
-
-- `Design approach`: Domain Driven Design, The Clean Architecture, SOLID.
-- `Database type`: NoSQL
-- `Language`: TypeScript
-
 #### Project Structure
 
-.
-├── ...
-├── Domains
-│   ├── Facilities
-│   │   ├── Data Entity
-│   │   │   ├── IFacility.js
-│   │   ├── Data Model
-│   │   │   ├── Facility.js
-│   │   ├── Data Repository
-│   │   │   ├── FacilityMongoDB.js
-│   │   ├── Use cases
-│   ├── Agents
-│   │   ├── Data Entity
-│   │   │   ├── IAgent.js
-│   │   ├── Data Model
-│   │   │   ├── Agent.js
-│   │   ├── Data Repository
-│   │   │   ├── AgentMongoDB.js
-│   │   ├── Use cases
-│   └── Shifts
-│       ├── Data Entity
-│       │   ├── IShift.js
-│       ├── Data Model
-│       │   ├── Shift.js
-│       ├── Data Repository
-│       │   ├── ShiftMongoDB.js
-│       ├── Use cases
-│           ├── getShiftsByFacility.js
-│           ├── generateReport.js
-├── test                    # Test files (alternatively `spec` or `tests`)
-│   ├── benchmarks          # Load and stress tests
-│   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-│   └── unit                # Unit tests
-└── ...
-
+    .
+    ├── ...
+    ├── src
+    │   ├── Domains
+    │   │   ├── Facilities
+    │   │   │   ├── Data Entity
+    │   │   │   │   ├── IFacility.js
+    │   │   │   ├── Data Model
+    │   │   │   │   ├── Facility.js
+    │   │   │   ├── Data Repository
+    │   │   │   │   ├── FacilityMongoDB.js
+    │   │   │   ├── Use cases
+    │   │   │
+    │   │   ├── Agents
+    │   │   │   ├── Data Entity
+    │   │   │   │   ├── IAgent.js
+    │   │   │   ├── Data Model
+    │   │   │   │   ├── Agent.js
+    │   │   │   ├── Data Repository
+    │   │   │   │   ├── AgentMongoDB.js
+    │   │   │   ├── Use cases
+    │   │   │
+    │   │   └── Shifts
+    │   │       ├── Data Entity
+    │   │       │   ├── IShift.js
+    │   │       ├── Data Model
+    │   │       │   ├── Shift.js
+    │   │       ├── Data Repository
+    │   │       │   ├── ShiftMongoDB.js
+    │   │       ├── Use cases
+    │   │           ├── getShiftsByFacility.js
+    │   │           ├── generateReport.js
+    │   │
+    │   └── Infrastructure
+    │       ├── Persistence
+    │       │   ├── BaseRepo.ts
+    │       │   ├── InMemory.ts
+    │       │   ├── Paging.ts
+    │       │
+    │       ├── Utils
+    │
+    ├── tests                   # Test files
+    │   
+    └── ...
