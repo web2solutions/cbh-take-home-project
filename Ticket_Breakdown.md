@@ -99,27 +99,27 @@ Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the appl
 
 New generated PDF reports must list out the Agent custom ID rather than the Agent ID.
 
-##### Ticket CBH-02 - Child of CBH-01
+##### - Ticket CBH-02 - Child of CBH-01
 
 - `Title`: Update Domain component
 - Update Agent Model - add customId
 
-##### Ticket CBH-03 - Child of CBH-01
+##### - Ticket CBH-03 - Child of CBH-01
 
  Update UI
 
 - Agent - set custom ID
 
-##### Ticket CBH-04 - Child of CBH-01
+##### - Ticket CBH-04 - Child of CBH-01
 
 Deploy - staging
 
 - Fix staging data
 
-##### Ticket CBH-05 - Child of CBH-01
+##### - Ticket CBH-05 - Child of CBH-01
 
 Production - Update agents - set custom ID
 
-##### Ticket CBH-06 - Child of CBH-01
+##### - Ticket CBH-06 - Child of CBH-01
 
 Fix Production data - Shifts - add custom agent ID
