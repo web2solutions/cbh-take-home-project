@@ -41,10 +41,13 @@ Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the appl
 ### Ticket Breakdown
 
 1. Update Domain component
-  1.1. Update Agent Model - add customId
-  1.2. 
-2. Update API documentation
-3. Update UI
+  - Update Agent Model - add customId
+2. Update UI
+  - Agent - set custom ID
+3. Deploy - staging
+  - Fix staging data
+4. Production - Update agents - set custom ID
+5. Fix Production data - Shifts - add custom agent ID
 
 
 #### Project Structure
