@@ -32,6 +32,8 @@ For this product, I'm assuming that we are the following technologies and princi
 - `Language`: TypeScript
 - `Database`: Agnostic, In Memory, Key/Value, NoSQL
 
+#### Domains Overview
+
 ![UML classes](/domains.png "UML classes")
 
 ### Implemented application
