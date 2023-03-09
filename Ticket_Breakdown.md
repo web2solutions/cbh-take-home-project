@@ -38,35 +38,6 @@ Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the appl
 
 `https://github.com/web2solutions/cbh-take-home-staffing`
 
-### Ticket Breakdown
-
-#### Epic
-
-Feature request.
-
-`Description:`
-
-    Currently, the id of each Agent on the reports we generate is their internal database id. We'd like to add the ability for Facilities to save their own custom ids for each Agent they work with and use that id when generating reports for them.
-
-#### Ticket 01
-
-- `Title`: Update Domain component
-
-1. 
-
-- Update Agent Model - add customId
-
-2. Update UI
-
-- Agent - set custom ID
-
-3. Deploy - staging
-
-- Fix staging data
-
-4. Production - Update agents - set custom ID
-5. Fix Production data - Shifts - add custom agent ID
-
 #### Project Structure
 
     .
@@ -113,3 +84,42 @@ Feature request.
     ├── tests                   # Test files
     │   
     └── ...
+
+### Ticket Breakdown
+
+#### Ticket CBH-01 - Type: Epic
+
+`Title`: Feature request | Add Agent custom ID to Agent Domain and `generateReport` Use Case.
+
+`Description:`
+
+    Currently, the id of each Agent on the reports we generate is their internal database id. We'd like to add the ability for Facilities to save their own custom ids for each Agent they work with and use that id when generating reports for them.
+
+`Acceptance Criteria`:
+
+New generated PDF reports must list out the Agent custom ID rather than the Agent ID.
+
+##### Ticket CBH-02 - Child of CBH-01
+
+- `Title`: Update Domain component
+- Update Agent Model - add customId
+
+##### Ticket CBH-03 - Child of CBH-01
+
+ Update UI
+
+- Agent - set custom ID
+
+##### Ticket CBH-04 - Child of CBH-01
+
+Deploy - staging
+
+- Fix staging data
+
+##### Ticket CBH-05 - Child of CBH-01
+
+Production - Update agents - set custom ID
+
+##### Ticket CBH-06 - Child of CBH-01
+
+Fix Production data - Shifts - add custom agent ID
