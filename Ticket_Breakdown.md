@@ -91,6 +91,9 @@ Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the appl
 
 ### Ticket Breakdown
 
+- Estimation based on complexity.
+- Definition of done: PR merged on master/main. Main branch is deployed to staging.
+
 #### Ticket CBH-01 - Type: Epic
 
 `Title`: Feature request | Add Agent custom ID to Agent Domain and `generateReport` Use Case.
@@ -101,12 +104,40 @@ Please [check](https://github.com/web2solutions/cbh-take-home-staffing) the appl
 
 `Acceptance Criteria`:
 
-New generated PDF reports must list out the Agent custom ID rather than the Agent ID.
+- TDD - Unit test for getShiftsByFacility
+- Generated PDF reports must list out the Agent custom ID rather than the Agent ID.
+- No failing tests.
+- 100% code coverage.
+
+`Story Points`:
 
 ##### - Ticket CBH-02 - Child of CBH-01
 
-- `Title`: Update Domain component
-- Update Agent Model - add customId
+`Title`: Feature request | Agent domain - update Data Model
+
+`Description:`
+
+    As a developer of CBH I want to update the Agent domain and add a new attribute `customId` that can be used to assign custom IDs to every agent in the system.
+    
+    Update the Agent Data Model and add the customId (string) attribute.
+
+    It should automatically assign a unique random custom ID if no one is provided as input.
+
+`Story Points`: 1
+
+##### - Ticket CBH-03 - Child of CBH-01
+
+`Title`: Feature request | Agent domain - update Data Model
+
+`Description:`
+
+    As a developer of CBH I want to update the Agent domain and add a new attribute `customId` that can be used to assign custom IDs to every agent in the system.
+    
+    Update the Agent Data Model and add the customId (string) attribute.
+
+    It should automatically assign a unique random custom ID if no one is provided as input.
+
+`Story Points`: 1
 
 ##### - Ticket CBH-03 - Child of CBH-01
 
